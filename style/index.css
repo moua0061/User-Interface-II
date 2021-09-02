@@ -113,21 +113,24 @@ header{
 
 .gallery{
     display:flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    max-width: 100;
-}
-.gallery img{
-    max-width:100%;
-    height:30vh;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 .gallery div{
-    margin: 5%;;
+    display: flex;
 }
 
+.gallery img{
+    max-width:100%;
+    height:30vh;
+    padding: 1%;
+    margin: 4%;
+}
+
+.p{
+    text-align: center;
+    display: flex;
+}
 footer{
     background-color:#E5E8E8;
     padding:2%;

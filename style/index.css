@@ -84,9 +84,8 @@ header{
     justify-content:space-around;
 }
 
-.img{
-    max-width: 100%;
-    height:auto;
+.left image{
+    /* need to resize image to fit right side */
 }
 
 .right{
@@ -106,4 +105,11 @@ header{
 .info{
     text-align: left;
     padding:5%;
+}
+
+.fun{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 5%;
 }

@@ -84,8 +84,10 @@ header{
     justify-content:space-around;
 }
 
-.left image{
+.left image1{
     /* need to resize image to fit right side */
+    width:20%;
+    height:40vh;
 }
 
 .right{
@@ -109,7 +111,10 @@ header{
 
 .fun{
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-around;
+    flex-flow: row wrap;
     margin: 5%;
+}
+.fun img{
+    
 }

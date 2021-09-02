@@ -84,10 +84,12 @@ header{
     justify-content:space-around;
 }
 
-.left image1{
-    /* need to resize image to fit right side */
-    width:20%;
-    height:40vh;
+.left{
+    /* need anything to change? this contains image of me*/
+}
+
+.image1 img{
+    /* need to resize image to fit right side ?*/
 }
 
 .right{
@@ -109,12 +111,25 @@ header{
     padding:5%;
 }
 
-.fun{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    margin: 5%;
+.gallery{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    max-width: 100;
 }
-.fun img{
-    
+.gallery img{
+    max-width:100%;
+    height:30vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery div{
+    margin: 5%;;
+}
+
+footer{
+    background-color:#E5E8E8;
+    padding:2%;
+    text-align: center;
 }

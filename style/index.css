@@ -45,7 +45,7 @@ blockquote, q {
 
 /* universal styles */
 *{
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 body{
     font-family: 'Kaisei Decol', serif;

@@ -43,13 +43,16 @@ blockquote, q {
 
 /* CSS */
 
+/* universal styles */
 *{
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 body{
     font-family: 'Kaisei Decol', serif;
     
 }
+
+/* header */
 
 header{
     background-color:#E5E8E8;
@@ -79,18 +82,24 @@ nav a:hover{
     font-weight: bold;
 }
 
+/* the main content w/my picture & info about me */
 .main{
-    display:flex;
-    justify-content:space-around;
-    margin-top: 2%;
+    
 }
 
+footer{
+    background-color:#E5E8E8;
+    padding:2%;
+    margin-top: 2%;
+    text-align: center;
+}
+/* 
 .left{
-    /* this contains image of me*/
+   
 }
 
 .image1 img{
-    /* need to resize image to fit right side? */
+    
     margin-left: 5%;
 }
 
@@ -113,7 +122,8 @@ nav a:hover{
     padding:5%;
 }
 
-.gallery{
+/* the main content w/pictures of projects
+ .gallery{
     display:flex;
     flex-wrap:wrap;
     margin-top: 2%;
@@ -137,9 +147,6 @@ nav a:hover{
 .p{
     text-align: center;
 }
-footer{
-    background-color:#E5E8E8;
-    padding:2%;
-    margin-top: 2%;
-    text-align: center;
-}
+
+/* footer/ending stuff */
+

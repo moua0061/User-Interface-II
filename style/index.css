@@ -93,15 +93,6 @@ footer{
     margin-top: 2%;
     text-align: center;
 }
-/* 
-.left{
-   
-}
-
-.image1 img{
-    
-    margin-left: 5%;
-}
 
 .right{
     display: flex;
@@ -117,18 +108,62 @@ footer{
 .nav2{
     text-align: center;
 }
-.info{
-    text-align: left;
-    padding:5%;
+
+.me-box{
+    display: flex;
 }
 
-/* the main content w/pictures of projects
- .gallery{
-    display:flex;
-    flex-wrap:wrap;
+.left{
+    width:40%;
+}
+
+
+.left img{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
+
+.right{
+    width:40%;
+    display: flex;
+    align-items: center;
+}
+
+.right h2{
+    letter-spacing: 10px;
+    font-weight: bolder;
+}
+
+.nav2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content{
     margin-top: 2%;
     padding: 2%;
     max-width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-content img{
+    width: 300px;
+    height: 40vh;
+}
+
+.main-content div{
+    margin:10px;
+}
+
+.main-content p{
+    text-align: center;
+}
+
+
+/* the main content w/pictures of projects
 }
 
 .gallery div{

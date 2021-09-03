@@ -44,7 +44,7 @@ blockquote, q {
 /* CSS */
 
 *{
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 body{
     font-family: 'Kaisei Decol', serif;
@@ -74,7 +74,7 @@ nav a{
     text-align: center;
 }
 
-.nav a:hover{
+nav a:hover{
     background: whitesmoke;
     font-weight: bold;
 }
@@ -82,14 +82,16 @@ nav a{
 .main{
     display:flex;
     justify-content:space-around;
+    margin-top: 2%;
 }
 
 .left{
-    /* need anything to change? this contains image of me*/
+    /* this contains image of me*/
 }
 
 .image1 img{
-    /* need to resize image to fit right side ?*/
+    /* need to resize image to fit right side? */
+    margin-left: 5%;
 }
 
 .right{
@@ -114,17 +116,22 @@ nav a{
 .gallery{
     display:flex;
     flex-wrap:wrap;
+    margin-top: 2%;
+    padding: 2%;
+    max-width:100%;
 }
 
 .gallery div{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
+    padding: 0.5%;
 }
 
 .gallery img{
     max-width:100%;
-    height:30vh;
-    padding: 1%;
-    margin: 4%;
+    height:40vh;
 }
 
 .p{
@@ -133,5 +140,6 @@ nav a{
 footer{
     background-color:#E5E8E8;
     padding:2%;
+    margin-top: 2%;
     text-align: center;
 }

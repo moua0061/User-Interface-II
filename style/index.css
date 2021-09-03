@@ -62,7 +62,7 @@ header{
     letter-spacing: 15px;
     font-size: 35px;
 }
-.nav a{
+nav a{
     border: 2px solid black;
     margin-top: 20px;
     margin-right: 5px;
@@ -129,7 +129,6 @@ header{
 
 .p{
     text-align: center;
-    display: flex;
 }
 footer{
     background-color:#E5E8E8;

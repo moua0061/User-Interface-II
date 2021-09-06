@@ -84,30 +84,9 @@ nav a:hover{
 
 /* the main content w/my picture & info about me */
 
-
-.right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.name2{
-    text-align: center;
-    letter-spacing: 4px;
-    padding: 5%;
-}
-
-.nav2{
-    text-align: center;
-}
-
 .me-box{
     display: flex;
 }
-
-.left{
-    width:40%;
-}
-
 
 .left img{
     width: 500px;
@@ -115,21 +94,31 @@ nav a:hover{
     margin: 20px;
 }
 
+.left, .right{
+    justify-content: space-between;
+}
 .right{
-    width:40%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.me{
+    padding: 10%;;
 }
 
 .right h2{
     letter-spacing: 10px;
     font-weight: bolder;
+    text-align: center;
+    line-height: 10;
 }
 
 .nav2{
     margin-bottom: 20px;
     text-align: center;
 }
+
 /* the main content w/pictures of projects */
 .main-content{
     margin-top: 2%;
@@ -137,12 +126,13 @@ nav a:hover{
     max-width:100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .main-content img{
-    width: 300px;
-    height: 40vh;
+    width: auto;
+    height: 50vh;
 }
 
 .main-content div{
@@ -159,4 +149,14 @@ footer{
     padding:2%;
     margin-top: 2%;
     text-align: center;
+}
+
+/* media queries */
+/* for tablet */
+@media(max-width:800px){
+
+}
+/* for phone */
+@media(max-width:500px){
+    
 }

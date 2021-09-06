@@ -21,35 +21,13 @@ body {
 	line-height: 1;
 	color: black;
 	}
-ol, ul {
-	list-style: none;
-	}
-/* tables still need cellspacing="0" in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	}
-caption, th, td {
-	font-weight: normal;
-	text-align: left;
-	}
-/* remove possible quote marks (") from <q> & <blockquote> */
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-	}
-blockquote, q {
-	quotes: "" "";
-	}
 
 /* CSS */
 
 /* universal styles */
 *{
     border: 1px red solid;
-}
-body{
     font-family: 'Kaisei Decol', serif;
-    
 }
 
 /* header */
@@ -57,24 +35,25 @@ body{
 header{
     background-color:#E5E8E8;
     padding:2%;
+    width: 100%;
 }
-
 
 .name{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 15px;
     font-size: 35px;
 }
-nav a{
+
+.links a{
     border: 2px solid black;
     margin-top: 20px;
     margin-right: 5px;
     padding:5px;
     display: inline-block;
     color: black;
-    text-decoration: none;
     letter-spacing: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover{
@@ -101,7 +80,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .me{
     padding: 10%;;
@@ -114,9 +92,11 @@ nav a:hover{
     line-height: 10;
 }
 
-.nav2{
+.right .me .links{
     margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* the main content w/pictures of projects */
@@ -154,9 +134,41 @@ footer{
 /* media queries */
 /* for tablet */
 @media(max-width:800px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .left{
+        width:30%;
+    }
+    .left img{
+        width: 30%;
+        height:auto;
+        padding:0;
+        margin: 1;
+    }
 
+    .right{
+        width:40%;
+    }
+    .main-content{
+        width:60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    footer{
+        width:70%;
+        
+    }
 }
 /* for phone */
 @media(max-width:500px){
-    
 }

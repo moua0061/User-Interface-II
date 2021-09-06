@@ -45,7 +45,7 @@ blockquote, q {
 
 /* universal styles */
 *{
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 body{
     font-family: 'Kaisei Decol', serif;
@@ -83,16 +83,7 @@ nav a:hover{
 }
 
 /* the main content w/my picture & info about me */
-.main{
-    
-}
 
-footer{
-    background-color:#E5E8E8;
-    padding:2%;
-    margin-top: 2%;
-    text-align: center;
-}
 
 .right{
     display: flex;
@@ -139,7 +130,7 @@ footer{
     margin-bottom: 20px;
     text-align: center;
 }
-
+/* the main content w/pictures of projects */
 .main-content{
     margin-top: 2%;
     padding: 2%;
@@ -162,26 +153,10 @@ footer{
     text-align: center;
 }
 
-
-/* the main content w/pictures of projects
-}
-
-.gallery div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2%;
-    padding: 0.5%;
-}
-
-.gallery img{
-    max-width:100%;
-    height:40vh;
-}
-
-.p{
+/* footer/ending stuff */
+footer{
+    background-color:#E5E8E8;
+    padding:2%;
+    margin-top: 2%;
     text-align: center;
 }
-
-/* footer/ending stuff */
-

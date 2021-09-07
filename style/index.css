@@ -98,6 +98,10 @@ nav a:hover{
     align-items: center;
 }
 
+.right p{
+    text-align: center;
+}
+
 /* the main content w/pictures of projects */
 .main-content{
     display: flex;

@@ -101,7 +101,6 @@ nav a:hover{
 
 /* the main content w/pictures of projects */
 .main-content{
-    margin-top: 2%;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +132,23 @@ footer{
 /* media queries */
 /* for tablet */
 @media(max-width:800px){
-    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left{
+        width: 50%;
+    }
+    .left img{
+        width:370px;
+        height:90vh;
+    }
+    .right p{
+        text-align: center;
+    }
+    .main-content{
+        margin-top: 0;
+    }
 }
 /* for phone */
 @media(max-width:500px){

@@ -26,7 +26,7 @@ body {
 
 /* universal styles */
 *{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     font-family: 'Kaisei Decol', serif;
 }
 
@@ -35,7 +35,6 @@ body {
 header{
     background-color:#E5E8E8;
     padding:2%;
-    
 }
 
 .name{
@@ -89,7 +88,7 @@ nav a:hover{
     letter-spacing: 10px;
     font-weight: bolder;
     text-align: center;
-    line-height: 10;
+    line-height: 4;
 }
 
 .right .me .links{
@@ -101,7 +100,6 @@ nav a:hover{
 
 /* the main content w/pictures of projects */
 .main-content{
-    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

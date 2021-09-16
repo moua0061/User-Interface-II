@@ -21,35 +21,13 @@ body {
 	line-height: 1;
 	color: black;
 	}
-ol, ul {
-	list-style: none;
-	}
-/* tables still need cellspacing="0" in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	}
-caption, th, td {
-	font-weight: normal;
-	text-align: left;
-	}
-/* remove possible quote marks (") from <q> & <blockquote> */
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-	}
-blockquote, q {
-	quotes: "" "";
-	}
 
 /* CSS */
 
 /* universal styles */
 *{
     /* border: 1px red solid; */
-}
-body{
     font-family: 'Kaisei Decol', serif;
-    
 }
 
 /* header */
@@ -59,22 +37,22 @@ header{
     padding:2%;
 }
 
-
 .name{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 15px;
     font-size: 35px;
 }
-nav a{
+
+.links a{
     border: 2px solid black;
     margin-top: 20px;
     margin-right: 5px;
     padding:5px;
     display: inline-block;
     color: black;
-    text-decoration: none;
     letter-spacing: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover{
@@ -83,75 +61,58 @@ nav a:hover{
 }
 
 /* the main content w/my picture & info about me */
-.main{
-    
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-footer{
-    background-color:#E5E8E8;
-    padding:2%;
-    margin-top: 2%;
-    text-align: center;
+.left{
+    width:45%;
 }
-
 .right{
+    width:45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.name2{
-    text-align: center;
-    letter-spacing: 4px;
-    padding: 5%;
-}
-
-.nav2{
-    text-align: center;
-}
-
-.me-box{
-    display: flex;
-}
-
-.left{
-    width:40%;
-}
-
-
 .left img{
     width: 500px;
     height: auto;
-    margin: 20px;
+    margin: 2%;
 }
-
-.right{
-    width:40%;
-    display: flex;
-    align-items: center;
+.me{
+    padding: 10%;;
 }
 
 .right h2{
     letter-spacing: 10px;
     font-weight: bolder;
+    text-align: center;
+    line-height: 4;
 }
 
-.nav2{
+.right .me .links{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right p{
     text-align: center;
 }
 
+/* the main content w/pictures of projects */
 .main-content{
-    margin-top: 2%;
-    padding: 2%;
-    max-width:100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .main-content img{
-    width: 300px;
-    height: 40vh;
+    width: auto;
+    height: 50vh;
 }
 
 .main-content div{
@@ -162,26 +123,69 @@ footer{
     text-align: center;
 }
 
-
-/* the main content w/pictures of projects
-}
-
-.gallery div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2%;
-    padding: 0.5%;
-}
-
-.gallery img{
-    max-width:100%;
-    height:40vh;
-}
-
-.p{
+/* footer/ending stuff */
+footer{
+    background-color:#E5E8E8;
+    padding:2%;
+    margin-top: 2%;
     text-align: center;
 }
 
-/* footer/ending stuff */
-
+/* media queries */
+/* for tablet */
+@media(max-width:800px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .left img{
+        width:340px;
+        height:90vh;
+    }
+    .right h2{
+        text-align: center;
+        line-height:3;
+    }
+    .right p{
+        text-align: center;
+    }
+    .main-content{
+        margin-top: 0;
+    }
+}
+/* for phone */
+@media(max-width:500px){
+    nav, .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .left img{
+        width:70%;
+        height:90vh;
+    }
+    .right{
+        width:100%;
+    }
+    .right h2{
+        line-height: 3;
+    }
+    .me p{
+        text-align: center;
+    }
+}
